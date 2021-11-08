@@ -1,0 +1,8 @@
+{
+  "plugins": ["react"],
+  "extends": [
+    "@raidou/eslint-config-base",
+    "plugin:react-hooks/recommended",
+    "plugin:react/recommended"
+  ]
+}

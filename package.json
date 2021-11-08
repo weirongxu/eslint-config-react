@@ -1,15 +1,15 @@
 {
   "name": "@raidou/eslint-config-react",
   "version": "1.0.0",
-  "main": "index.js",
   "author": "Weirong Xu <weirongxu.raidou@gmail.com>",
   "license": "MIT",
-  "files": [
-    ".eslintrc"
-  ],
+  "main": ".eslintrc",
   "scripts": {
     "test": "eslint --ext .ts,.tsx src"
   },
+  "files": [
+    ".eslintrc"
+  ],
   "dependencies": {
     "@raidou/eslint-config-base": "^1.0.0",
     "eslint-plugin-react": "^7.26.1",

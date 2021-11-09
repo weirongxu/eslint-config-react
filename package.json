@@ -13,7 +13,7 @@
   "dependencies": {
     "@raidou/eslint-config-base": "^1.0.0",
     "eslint-plugin-react": "^7.26.1",
-    "eslint-plugin-react-hooks": "^4.2.0"
+    "eslint-plugin-react-hooks": "^4.2.1-alpha-00ced1e2b-20211102"
   },
   "devDependencies": {
     "@types/react": "^17.0.34",

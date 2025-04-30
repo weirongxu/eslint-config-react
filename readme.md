@@ -8,14 +8,9 @@ npm install @raidou/eslint-config-react
 
 ## Usage
 
-.eslintrc
+eslint.config.mjs
 
-```json
-{
-  "root": true,
-  "env": {
-    "browser": true
-  },
-  "extends": ["@raidou/eslint-config-react"]
-}
+```javascript
+import { tsconfig } from '@raidou/eslint-config-react';
+export default tsconfig;
 ```

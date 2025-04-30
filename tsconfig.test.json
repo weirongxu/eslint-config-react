@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "jsx": "react-jsx",
+    "outDir": "dist",
+    "allowJs": true,
+    "strict": true
+  },
+  "include": ["test", "eslint.config.mjs"]
+}

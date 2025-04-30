@@ -14,3 +14,14 @@ eslint.config.mjs
 import { tsconfig } from '@raidou/eslint-config-react';
 export default tsconfig;
 ```
+
+custom rules
+
+```javascript
+import { tsconfig, tseslint } from '@raidou/eslint-config-react';
+export default tseslint.config(tsconfig, {
+  rules: {
+    'no-var': 'off',
+  },
+});
+```

@@ -23,4 +23,9 @@ const reactTsconfig: ConfigArray = tseslint.config(
   reactPlugin.configs.flat['jsx-runtime'],
 );
 
-export { reactJsconfig as jsconfig, reactTsconfig as tsconfig };
+export {
+  reactJsconfig as jsconfig,
+  reactTsconfig as tsconfig,
+  tseslint,
+  type ConfigArray,
+};

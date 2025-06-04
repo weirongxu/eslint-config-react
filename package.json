@@ -4,7 +4,7 @@
   "author": "Weirong Xu <weirongxu.raidou@gmail.com>",
   "repository": "git@github.com:weirongxu/eslint-config-react.git",
   "license": "MIT",
-  "main": ".eslintrc",
+  "main": "./dist/index.js",
   "engines": {
     "node": ">=14.0.0"
   },

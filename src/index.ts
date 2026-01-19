@@ -5,7 +5,7 @@ import reactHooks from 'eslint-plugin-react-hooks';
 import { defineConfig } from 'eslint/config';
 
 const reactJsconfig: Linter.Config[] = defineConfig(
-  ...jsconfig,
+  jsconfig,
   reactHooks.configs.flat.recommended,
   reactPlugin.configs.flat.recommended,
   reactPlugin.configs.flat['jsx-runtime'],

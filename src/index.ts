@@ -1,4 +1,4 @@
-import { jsconfig, tsconfig, tseslint } from '@raidou/eslint-config-base';
+import { jsconfig, tsconfig } from '@raidou/eslint-config-base';
 import { Linter } from 'eslint';
 import reactPlugin from 'eslint-plugin-react';
 import reactHooks from 'eslint-plugin-react-hooks';
@@ -27,4 +27,4 @@ const reactTsconfig: Linter.Config[] = defineConfig(
   ignoreRules,
 );
 
-export { reactJsconfig as jsconfig, reactTsconfig as tsconfig, tseslint };
+export { reactJsconfig as jsconfig, reactTsconfig as tsconfig };

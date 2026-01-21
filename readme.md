@@ -18,8 +18,9 @@ export default tsconfig;
 custom rules
 
 ```javascript
-import { tsconfig, tseslint } from '@raidou/eslint-config-react';
-export default tseslint.config(tsconfig, {
+import { tsconfig } from '@raidou/eslint-config-react';
+import { defineConfig } from 'eslint/config';
+export default defineConfig(tsconfig, {
   rules: {
     'no-var': 'off',
   },

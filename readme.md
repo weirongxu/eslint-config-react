@@ -11,18 +11,18 @@ npm install @raidou/eslint-config-react
 eslint.config.mjs
 
 ```javascript
-import { tsconfig } from '@raidou/eslint-config-react';
-export default tsconfig;
+import { tsconfig } from '@raidou/eslint-config-react'
+export default tsconfig
 ```
 
 custom rules
 
 ```javascript
-import { tsconfig } from '@raidou/eslint-config-react';
-import { defineConfig } from 'eslint/config';
+import { tsconfig } from '@raidou/eslint-config-react'
+import { defineConfig } from 'eslint/config'
 export default defineConfig(tsconfig, {
   rules: {
     'no-var': 'off',
   },
-});
+})
 ```

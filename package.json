@@ -9,26 +9,40 @@
     "node": ">=14.0.0"
   },
   "scripts": {
-    "test": "npm run build && npm run test:lint",
-    "test:lint": "eslint --ext .ts,.tsx test",
+    "test": "pnpm run test:types && pnpm run test:lint && pnpm run test:unit",
+    "test:types": "tsc --noEmit",
+    "test:lint": "eslint",
+    "test:unit": "vitest run",
+    "test:watch": "vitest",
     "build": "tsc -p tsconfig.build.json",
-    "prepublish": "npm run build"
+    "prebuild": "pnpm run eject:rules",
+    "prepublish": "pnpm run build",
+    "eject:rules": "tsx scripts/eject-rules.ts"
   },
   "files": [
     "eslint.config.mjs",
     "dist/index.js",
-    "dist/index.d.ts"
+    "dist/index.d.ts",
+    "dist/tests/helper.js",
+    "dist/tests/helper.d.ts",
+    "dist/tests/setup.js",
+    "dist/tests/setup.d.ts"
   ],
   "dependencies": {
-    "@raidou/eslint-config-base": "^3.2.0",
+    "@raidou/eslint-config-base": "^4.4.1",
     "eslint-plugin-react": "^7.33.0",
     "eslint-plugin-react-hooks": "^7.0.1"
   },
   "devDependencies": {
-    "@types/react": "^19.2.8",
-    "eslint": "^9.39.2",
-    "prettier": "^3.8.0",
-    "react": "^19.2.3",
-    "typescript": "^5.9.3"
+    "@eslint/core": "^1.1.1",
+    "@types/node": "^25.5.0",
+    "@types/react": "^19.2.14",
+    "dedent": "^1.7.2",
+    "eslint": "^9.39.4",
+    "prettier": "^3.8.1",
+    "react": "^19.2.4",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.2",
+    "vitest": "^4.1.0"
   }
 }

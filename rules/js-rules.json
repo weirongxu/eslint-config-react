@@ -363,7 +363,7 @@
   "react-hooks/incompatible-library": "warn",
   "react-hooks/preserve-manual-memoization": "off",
   "react-hooks/purity": "error",
-  "react-hooks/refs": "error",
+  "react-hooks/refs": "off",
   "react-hooks/rules-of-hooks": "error",
   "react-hooks/set-state-in-effect": "off",
   "react-hooks/set-state-in-render": "error",

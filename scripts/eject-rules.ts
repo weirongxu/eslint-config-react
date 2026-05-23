@@ -6,7 +6,7 @@ import { jsconfig as reactJsconfig, tsconfig as reactTsconfig } from '../src'
 
 const REACT_HOOKS_URL_MAPPING: Partial<RuleUrlMapping> = {
   'react-hooks/': {
-    baseUrl: 'https://react.dev/reference/eslint-plugin-react-hooks/lints',
+    baseUrl: 'https://react.dev/reference/eslint-plugin-react-hooks/lints/',
   },
 }
 

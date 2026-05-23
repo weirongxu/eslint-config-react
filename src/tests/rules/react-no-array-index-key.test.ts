@@ -1,7 +1,9 @@
+import '../setup'
+
 import dedent from 'dedent'
 import { describe, expect, it } from 'vitest'
+
 import { lintHelper } from '../helper'
-import '../setup'
 
 describe('react-no-array-index-key', () => {
   it('should not error when using array index as key', async () => {

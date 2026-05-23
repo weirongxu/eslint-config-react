@@ -2,6 +2,7 @@ import {
   ejectRules,
   type RuleUrlMapping,
 } from '@raidou/eslint-config-base/dist/eject-rules'
+
 import { jsconfig as reactJsconfig, tsconfig as reactTsconfig } from '../src'
 
 const REACT_HOOKS_URL_MAPPING: Partial<RuleUrlMapping> = {

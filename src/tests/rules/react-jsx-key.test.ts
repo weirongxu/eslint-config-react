@@ -1,7 +1,9 @@
+import '../setup'
+
 import dedent from 'dedent'
 import { describe, expect, it } from 'vitest'
+
 import { lintHelper } from '../helper'
-import '../setup'
 
 describe('react-jsx-key', () => {
   it('should error on missing key in array map', async () => {

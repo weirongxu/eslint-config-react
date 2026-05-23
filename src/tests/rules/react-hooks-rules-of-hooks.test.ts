@@ -1,7 +1,9 @@
-import { describe, expect, it } from 'vitest'
-import dedent from 'dedent'
-import { lintHelper } from '../helper'
 import '../setup'
+
+import dedent from 'dedent'
+import { describe, expect, it } from 'vitest'
+
+import { lintHelper } from '../helper'
 
 describe('react-hooks-rules-of-hooks', () => {
   it('should error on conditional hook', async () => {

@@ -1,8 +1,8 @@
 import { jsconfig, tsconfig } from '@raidou/eslint-config-base'
-import { Linter } from 'eslint'
+import type { Linter } from 'eslint'
+import { defineConfig } from 'eslint/config'
 import reactPlugin from 'eslint-plugin-react'
 import reactHooks from 'eslint-plugin-react-hooks'
-import { defineConfig } from 'eslint/config'
 
 const ignoreRules: Linter.Config = {
   rules: {

@@ -1,7 +1,9 @@
+import '../setup'
+
 import dedent from 'dedent'
 import { describe, expect, it } from 'vitest'
+
 import { lintHelper } from '../helper'
-import '../setup'
 
 describe('react-hooks-exhaustive-deps', () => {
   it('should error on missing dependency in useEffect', async () => {

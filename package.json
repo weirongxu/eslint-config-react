@@ -3,6 +3,10 @@
   "version": "4.1.0",
   "author": "Weirong Xu <weirongxu.raidou@gmail.com>",
   "repository": "git@github.com:weirongxu/eslint-config-react.git",
+  "homepage": "https://github.com/weirongxu/eslint-config-react",
+  "bugs": {
+    "url": "https://github.com/weirongxu/eslint-config-react/issues"
+  },
   "license": "MIT",
   "main": "./dist/index.js",
   "engines": {

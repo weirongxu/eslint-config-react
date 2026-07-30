@@ -12,17 +12,14 @@ eslint.config.mjs
 
 ```javascript
 import { tsconfig } from '@raidou/eslint-config-react'
-export default tsconfig
-```
-
-custom rules
-
-```javascript
-import { tsconfig } from '@raidou/eslint-config-react'
-import { defineConfig } from 'eslint/config'
-export default defineConfig(tsconfig, {
-  rules: {
-    'no-var': 'off',
+import { defineConfig, globalIgnores } from 'eslint/config'
+export default defineConfig([
+  globalIgnores(['**/node_modules/', '**/.vitest/', '**/dist/', '**/.venv/']),
+  tsconfig,
+  {
+    rules: {
+      // ...
+    },
   },
-})
+])
 ```

@@ -1,6 +1,9 @@
 {
   "name": "@raidou/eslint-config-react",
   "version": "4.1.0",
+  "bugs": {
+    "url": "https://github.com/weirongxu/eslint-config-react/issues"
+  },
   "author": "Weirong Xu <weirongxu.raidou@gmail.com>",
   "repository": "git@github.com:weirongxu/eslint-config-react.git",
   "license": "MIT",
